@@ -114,7 +114,7 @@ public class MainFragment extends Fragment implements Injectable {
             }
         };
         recyclerView.addOnScrollListener(mScrollListener);
-
+        hideProgressBar();
         return view;
     }
 
@@ -200,6 +200,12 @@ public class MainFragment extends Fragment implements Injectable {
                                 pageCountCacheEmpty(pageCount);
                             } else if (pageCountCache < pageCount) {
                                 pageCountCacheLessThanPageCount(pageCount, pageCountCache);
+                            } else {
+                                isLoading.set(false);
+                                hideProgressBar();
+                                mScrollListener.setLoading(false);
+                                swipeRefresh.setRefreshing(false);
+
                             }
                         }
                     }
