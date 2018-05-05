@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/tvBlockNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123123" />
+
+        <TextView
+
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvBlockNumber"
+            android:text="123123" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView><!--
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="app.bitmark.com.bitmark.network.response.block.detail.BlockDetail" />
+
+        <variable
+            name="blockDetail"
+            type="app.bitmark.com.bitmark.network.response.block.detail.BlockDetail" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/tvBlockNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="123123"
+                android:text="@{blockDetail.getBlockNumber()}" />
+            <TextView
+
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvBlockNumber"
+                tools:text="123123"
+                android:text="@{blockDetail.getDescription()}" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</layout>-->
